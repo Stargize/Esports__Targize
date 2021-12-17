@@ -5,49 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap"
     />
-    <script
-      src="https://kit.fontawesome.com/e47c7f40aa.js"
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
-    ></script>
+    />
     <link rel="stylesheet" href="style2.css" />
     <title>Esports ARG</title>
   </head>
   <body>
-    <div id="grid">
+    <div id="grid" class="header">
+      <div class="container-fluid p-0">
       <header class="header">
         <h1 class="logo">Esports Argentina</h1>
-        <nav class="nav__header nav">
+        <nav class="nav__header nav navbar-expand-lg">
           <a href="Index2.html"> Inicio </a>
           <a href="views/Equipos.html"> Equipos </a>
           <a href="views/Rankings.html"> Rankings </a>
           <a href="views/Contact.html"> Conacto </a>
           <a href="views/Inicio sesion.html"> Inicia sesión </a>
         </nav>
+        </div>
       </header>
-      <main class="main">
-        <div class="div-padre">
-          <div class="titule titule-csgo">
+      <main class="main ">
+      <div class="container-fluid p-0">
+        <div class="div-padre row">
+          <div class="titule titule-csgo col-md 4 lg-4 sm-12">
             <h2>Counter Strike Global Offensive</h2>
           </div>
           <br />
-          <div class="titule titule-lol">
+          <div class="titule titule-lol col-md 4 lg-4 sm-12">
             <h2>Legue of Legends</h2>
           </div>
           <br />
-          <div class="titule titule-valorant">
+          <div class="titule titule-valorant col-md 4 lg-4 sm-12">
             <h2>Valorant</h2>
           </div>
         </div>
+      </div>
       </main>
       <hr />
       <div>
-        <section class="section section-news">
-          <h3 class="titule-news">NEWS</h3>
+        <section class="section section-news container-fluid p-0">
+        <div class="row">
+          <h3 class="titule-news col-md 4 lg-4 sm-12">NEWS</h3>
+        </div>
           <div class="div-body-news complete-section-news">
             <div class="body-news">1</div>
             <div class="body-news">2</div>
@@ -58,7 +68,7 @@
           </div>
         </section>
       </div>
-      <section id="photos" class="section section-gallery">
+      <section id="photos" class="section section-gallery container-fluid p-0">
         <div>
           <div>
             <h3 class="titule-gallery">GALLERY</h3>
@@ -85,7 +95,7 @@
         </div>
       </section>
       <section id="matchs" class="section section-fixture">
-        <div>
+        <div class="container-fluid container-fluid p-0">
           <h3 class="titule-fixture">PROXIMOS PARTIDOS</h3>
           <div>
             <table class="table-fixture">
@@ -391,22 +401,31 @@
       </section>
 
       <footer
-        class="footer main-div-footer"
+        class="footer main-div-footer container-fluid p-0"
         style="text-align: center; padding: 20px 0 30px 0"
       >
-        <div class="span--footer">
-          <span style="color: black">
-            &copy; Copyright - Santiago Targize.</span
-          >
-        </div>
-        <div class="icons-footer">
+        <div class="icons-footer container-fluid">
           <i class="fab fa-facebook icon-facebook"></i>
           <i class="fab fa-twitter icon-twitter"></i>
           <i class="fab fa-youtube icon-youtube"></i>
           <i class="fab fa-twitch icon-twitch"></i>
           <i class="fab fa-instagram icon-instagram"></i>
         </div>
+        <div class="span--footer">
+          <span style="color: black">
+            &copy; Copyright - Santiago Targize.</span
+          >
+        </div>
       </footer>
     </div>
+    <script
+      src="https://kit.fontawesome.com/e47c7f40aa.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

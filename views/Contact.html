@@ -31,60 +31,72 @@
     <hr />
     <main>
       <form>
-        <h3 class="contact-titule">CONTACTO</h3>
-        <fieldset class="body-form" style="border: none">
-          <form>
-            <div class="boxs-form">
-              <label
-                for="nombre"
-                class="titule-labels"
-                style="text-align: center"
-                >Nombre
-              </label>
-              <input type="text" name="nombre" placeholder="Nombre" required />
-            </div>
+        <div class="container-fluid">
+          <div class="row">
+            <h3 class="contact-titule col-md 4 lg-4 sm-12">CONTACTO</h3>
+          </div>
+          <fieldset class="body-form" style="border: none">
+            <form>
+              <div class="boxs-form">
+                <label
+                  for="nombre"
+                  class="titule-labels"
+                  style="text-align: center"
+                  >Nombre
+                </label>
+                <input
+                  type="text"
+                  name="nombre"
+                  placeholder="Nombre"
+                  required
+                />
+              </div>
 
-            <div class="boxs-form">
-              <label
-                for="apellido"
-                class="titule-labels"
-                style="text-align: center"
-                >Apellido
-              </label>
-              <input
-                type="text"
-                name="apellido"
-                placeholder="Apellido"
-                required
-              />
-            </div>
+              <div class="boxs-form">
+                <label
+                  for="apellido"
+                  class="titule-labels"
+                  style="text-align: center"
+                  >Apellido
+                </label>
+                <input
+                  type="text"
+                  name="apellido"
+                  placeholder="Apellido"
+                  required
+                />
+              </div>
 
-            <div class="boxs-form">
-              <label
-                for="email"
-                class="titule-labels"
-                style="text-align: center"
-                >Email</label
-              >
-              <input type="email" name="email" placeholder="Email" required />
-            </div>
+              <div class="boxs-form">
+                <label
+                  for="email"
+                  class="titule-labels"
+                  style="text-align: center"
+                  >Email</label
+                >
+                <input type="email" name="email" placeholder="Email" required />
+              </div>
 
-            <div class="boxs-form">
-              <label for="text" class="titule-labels" style="text-align: center"
-                >Te escuchamos!</label
-              >
-              <input
-                type="text"
-                name="text"
-                placeholder="Escribinos tu duda aca"
-                required
-              />
-            </div>
-            <div class="boxs-form-bottom" style="text-align: center">
-              <input type="submit" value="Enviar" />
-            </div>
-          </form>
-        </fieldset>
+              <div class="boxs-form">
+                <label
+                  for="text"
+                  class="titule-labels"
+                  style="text-align: center"
+                  >Te escuchamos!</label
+                >
+                <input
+                  type="text"
+                  name="text"
+                  placeholder="Escribinos tu duda aca"
+                  required
+                />
+              </div>
+              <div class="boxs-form-bottom" style="text-align: center">
+                <input type="submit" value="Enviar" />
+              </div>
+            </form>
+          </fieldset>
+        </div>
       </form>
     </main>
     <hr />

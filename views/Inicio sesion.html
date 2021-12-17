@@ -31,67 +31,84 @@
     <hr />
     <main>
       <form>
-        <h3 class="contact-titule" style="text-align: center">
-          LOGIN | CREAR CUENTA
-        </h3>
-        <fieldset class="body-form__login">
-          <form>
-            <div class="boxs-form">
-              <label for="nick" class="titule-labels">Nick</label>
-              <input
-                type="text"
-                name="nick"
-                placeholder="Nick"
-                style="margin-top: 100px"
-              />
-            </div>
-            <div class="boxs-form">
-              <label for="email" class="titule-labels">Email</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="email@gmail.com"
-                style="margin-top: 100px"
-              />
-            </div>
-            <div class="boxs-form">
-              <label for="password" class="titule-labels-2">Contraseña</label>
-              <input
-                type="password"
-                name="password"
-                placeholder="**********"
-                style="margin-top: 100px"
-              />
-            </div>
-            <div class="boxs-form">
-              <label
-                for="password-confirm"
-                class="titule-labels-2"
-                style="padding: 30px 350px 30px 350px"
-                >Repita contraseña</label
-              >
-              <input
-                type="password"
-                name="password-confirm"
-                placeholder="**********"
-                style="margin-top: 100px"
-              />
-            </div>
+        <div class="container-fluid">
+          <div class="row p-0">
+            <h3
+              class="contact-titule col-md 4 lg-4 sm-12"
+              style="text-align: center"
+            >
+              LOGIN | CREAR CUENTA
+            </h3>
+          </div>
+          <fieldset class="body-form__login">
+            <form>
+              <div class="row p-0">
+                <div class="boxs-form col-md 4 lg-4 sm-12">
+                  <label for="nick" class="titule-labels">Nick</label>
+                  <input
+                    type="text"
+                    name="nick"
+                    placeholder="Nick"
+                    style="margin-top: 100px"
+                  />
+                </div>
+              </div>
+              <div class="row p-0">
+                <div class="boxs-form col-md 4 lg-4 sm-12">
+                  <label for="email" class="titule-labels">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="email@gmail.com"
+                    style="margin-top: 100px"
+                  />
+                </div>
+              </div>
+              <div class="row p-0">
+                <div class="boxs-form col-md 4 lg-4 sm-12">
+                  <label for="password" class="titule-labels-2"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="**********"
+                    style="margin-top: 100px"
+                  />
+                </div>
+              </div>
+              <div class="row p-0">
+                <div class="boxs-form col-md 4 lg-4 sm-12">
+                  <label
+                    for="password-confirm"
+                    class="titule-labels-2"
+                    style="padding: 30px 350px 30px 350px"
+                    >Repita contraseña</label
+                  >
+                  <input
+                    type="password"
+                    name="password-confirm"
+                    placeholder="**********"
+                    style="margin-top: 100px"
+                  />
+                </div>
+              </div>
 
-            <div class="boxs-form titule-labels-3">Tu Equipo!</div>
+              <div class="boxs-form titule-labels-3">Tu Equipo!</div>
 
-            <select name="teams" id="team" style="margin-top: 100px">
-              <option value="none">Seleccionar</option>
-              <option value="Furious Gaming">Furious Gaming</option>
-              <option value="Isurus Gaming">Isurus Gaming</option>
-              <option value="Coscu Army">Coscu Army</option>
-              <option value="Malvinas Gaming">Malvinas Gaming</option>
-              <option value="9z">9z</option>
-            </select>
-          </form>
-        </fieldset>
-        <div class="boxs-form-bottom" style="text-align: center">
-          <input type="submit" value="Enviar" />
+              <select name="teams" id="team" style="margin-top: 100px">
+                <option value="none">Seleccionar</option>
+                <option value="Furious Gaming">Furious Gaming</option>
+                <option value="Isurus Gaming">Isurus Gaming</option>
+                <option value="Coscu Army">Coscu Army</option>
+                <option value="Malvinas Gaming">Malvinas Gaming</option>
+                <option value="9z">9z</option>
+              </select>
+            </form>
+          </fieldset>
+          <div class="boxs-form-bottom" style="text-align: center">
+            <input type="submit" value="Enviar" />
+          </div>
         </div>
       </form>
     </main>
