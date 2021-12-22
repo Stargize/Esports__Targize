@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Montserrat", sans-serif;
 }
 .main {
   padding: 0;
@@ -113,8 +114,8 @@ header {
 
 .body-news {
   border: 2px solid white;
-  padding: 150px;
-  margin: auto;
+  padding: 50px;
+  margin: 10px 10px 10px 10px;
   text-align: center;
   transition: 1s;
 }
@@ -167,8 +168,9 @@ header {
 .div--father__equipos {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-wrap: wrap;
+  padding-bottom: 200px;
 }
 
 .logo-equipos {
@@ -179,13 +181,13 @@ header {
   padding: 30px;
   /* border-radius: 100px; */
   margin: 20px;
-  transition: 2s;
+  transition: 1s;
 }
 
 .logo-equipos:hover {
   width: 250px;
   height: auto;
-  transition: 2s;
+  transition: 1s;
 }
 
 .titule-teams__icons {
@@ -426,22 +428,18 @@ footer {
   color: #b09310;
   background-color: rgb(47, 47, 87);
   font-size: 30px;
-  border-bottom: 1px solid rgb(202, 201, 201);
-  margin: 50px 0 20px 0;
-  /* margin: 150px 0 50px 0; */
+  margin: 20px 0 20px 0;
 }
 .titule-ranking-valorant {
   padding: 30px 10px 30px 30px;
   background-color: rgb(138, 6, 6);
   color: rgb(255, 255, 255);
   font-size: 30px;
-  border-bottom: 1px solid rgb(202, 201, 201);
-  margin: 50px 0 20px 0;
-  /* margin: 150px 0 50px 0; */
+  margin: 20px 0 20px 0;
 }
 
 .main--body__ranking {
-  margin: 0px;
+  margin: 0px 0px 50px 0px;
   display: flex;
   background-color: white;
 }
@@ -464,7 +462,6 @@ ol li .main--body__ranking {
   padding: 30px 20px 30px 80px;
   background-color: white;
   font-size: 50px;
-  border-bottom: 1px solid rgb(202, 201, 201);
   margin: 50px 0 50px 0;
 }
 
@@ -481,7 +478,6 @@ ol li .main--body__ranking {
   background-color: rgb(3, 95, 95);
   color: white;
   font-size: 50px;
-  border-bottom: 1px solid rgb(202, 201, 201);
   margin: 50px 0 10px 0;
 }
 
@@ -490,7 +486,6 @@ ol li .main--body__ranking {
   background-color: rgb(3, 95, 95);
   color: white;
   font-size: 50px;
-  border-bottom: 1px solid rgb(202, 201, 201);
   margin: 50px 0 10px 0;
 }
 
@@ -504,41 +499,38 @@ ol li .main--body__ranking {
   padding: 90px;
   padding: 40px 0 40px 10px;
   /* background-color: beige; */
-  border: none;
 }
 
 .boxs-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: none;
   margin: 50px 0 30px 0;
   font-size: 40px;
 }
 
 .boxs-form-bottom {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   margin: 50px 0 30px 0;
-  font-size: 40px;
+  font-size: 25px;
 }
 
 .titule-labels {
-  padding: 30px 500px 30px 500px;
+  padding: 30px 300px 30px 300px;
   background-color: rgb(3, 95, 95);
   color: white;
   font-size: 50px;
-  border-bottom: 1px solid rgb(202, 201, 201);
   margin: 50px 0 10px 0;
 }
 
 .titule-labels-2 {
-  padding: 30px 350px 30px 350px;
+  padding: 30px 400px 30px 400px;
   background-color: rgb(3, 95, 95);
   color: white;
   font-size: 50px;
-  border-bottom: 1px solid rgb(202, 201, 201);
+
   margin: 50px 0 10px 0;
 }
 
@@ -547,10 +539,23 @@ ol li .main--body__ranking {
   background-color: rgb(3, 95, 95);
   color: white;
   font-size: 50px;
-  border-bottom: 1px solid rgb(202, 201, 201);
+
   margin: 50px 0 10px 0;
 }
-
+/*------------------ Int. Equipos ------------------ */
+.titule-news__for-teams {
+  padding: 50px;
+  max-width: 50%;
+  color: white;
+}
+.titules-int {
+  max-width: 100%;
+  height: auto;
+  text-align: left;
+  font-size: 20px;
+  padding: 30px;
+  margin-bottom: 200px;
+}
 /* #grid-equipos {
   display: grid;
   grid-template-areas:
@@ -628,7 +633,7 @@ footer {
   }
 } */
 
-/* #grid {
+#grid {
   display: grid;
   grid-template-areas:
     "header header header"
@@ -669,9 +674,9 @@ aside {
 
 .border {
   border: 2px solid white;
-} */
+}
 
-/* @media screen and (max-width: 900px) {
+@media screen and (max-width: 842px) {
   * {
     padding: 0;
     margin: 0;
@@ -702,6 +707,7 @@ aside {
 
   main {
     grid-area: main;
+    display: block;
   }
 
   section#news {
@@ -718,4 +724,17 @@ aside {
   footer {
     grid-area: footer;
   }
-} */
+  .icons-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  [class^="fab fa"] {
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 50px;
+    margin: 30px;
+  }
+}
