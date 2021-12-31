@@ -1,63 +1,20 @@
-$background-titule: white;
-$font-size__titule: 50px;
-$color-titule: black;
-$margin-titule: 50px 0 50px 0;
-$padding-titule: 30px 20px 30px 80px;
-
 .titule-news,
 .titule-gallery,
 .titule-teams,
 .titule-fixture,
 .titule-rankings {
-  background-color: $background-titule;
-  font-size: $font-size__titule;
-  color: $color-titule;
-  margin: $margin-titule;
-  padding: $padding-titule;
+  background-color: white;
+  font-size: 50px;
+  color: black;
+  margin: 50px 0 50px 0;
+  padding: 30px 20px 30px 80px;
 }
 
-// MAPA
-
-$redes: (
-  twitter: #55acee,
-  facebook: #3b5999,
-  youtube: #cd201f,
-  twitch: darkviolet,
-  instagram: #e4405f,
-);
-@each $red, $color in $redes {
-  .icon--#{$red} {
-    background-color: $color;
-  }
-}
-
-$estilos: (
-  font: 20px,
-  pad: 30px,
-  centro: center,
-  hei: auto,
-  mar: 0,
-  wid: 33.3%,
-);
-
-.titule {
-  margin: map-get($estilos, mar);
-  width: map-get($estilos, wid);
-  height: map-get($estilos, hei);
-  text-align: map-get($estilos, centro);
-  font-size: map-get($estilos, font);
-  padding: map-get($estilos, pad);
-}
-
-@mixin flex($dir, $jus, $alg) {
+.cotenedor {
   display: flex;
-  justify-content: $jus;
-  align-items: $alg;
-  flex-direction: $dir;
-}
-
-.div-body-news {
-  @include flex(column, center, none);
+  justify-content: center;
+  align-items: none;
+  flex-direction: column;
 }
 
 * {
@@ -65,13 +22,15 @@ $estilos: (
   padding: 0px;
   font-family: "Montserrat", sans-serif;
 }
+
 .main {
   padding: 0;
 }
+
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(27, 26, 26);
+  background-color: #1b1a1a;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -82,6 +41,7 @@ header {
   justify-content: center;
   max-width: 100%;
 }
+
 .logo {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
@@ -105,6 +65,7 @@ header {
   padding: 0px;
   transition: background-color 0.5s;
 }
+
 .nav__header a:hover {
   padding: 15px;
   background-color: black;
@@ -117,7 +78,6 @@ header {
   flex-wrap: wrap;
   width: 100%;
 } */
-
 .div-padre {
   display: flex;
   justify-content: space-around;
@@ -137,7 +97,7 @@ header {
 
 .titule-csgo {
   color: #b09310;
-  background-color: rgb(47, 47, 87);
+  background-color: #2f2f57;
   font-weight: 500;
 }
 
@@ -148,13 +108,12 @@ header {
 }
 
 .titule-valorant {
-  background-color: rgb(138, 6, 6);
-  color: rgb(255, 255, 255);
+  background-color: #8a0606;
+  color: white;
   font-weight: 500;
 }
 
 /*--*/
-
 .div-body-news {
   display: flex;
   justify-content: space-evenly;
@@ -183,7 +142,6 @@ header {
 }
 
 /*--*/
-
 .photos {
   display: flex;
   justify-content: space-evenly;
@@ -196,11 +154,10 @@ header {
   width: 20%;
   margin: 1%;
   object-fit: cover;
-  box-shadow: 0 0 4px 2px rgb(0, 0, 0);
+  box-shadow: 0 0 4px 2px black;
 }
 
 /*--*/
-
 .div--father__equipos {
   display: flex;
   align-items: center;
@@ -235,9 +192,8 @@ header {
 }
 
 /*--*/
-
 .table-fixture {
-  background-color: rgb(245, 235, 217);
+  background-color: #f5ebd9;
   border-bottom: 1px solid #ddd;
   border-collapse: collapse;
   padding: 60px 90px 60px 90px;
@@ -360,28 +316,28 @@ header {
 
 .titule-labels {
   padding: 30px 500px 30px 500px;
-  background-color: rgb(3, 95, 95);
+  background-color: #035f5f;
   color: white;
   font-size: 50px;
-  border-bottom: 1px solid rgb(202, 201, 201);
+  border-bottom: 1px solid #cac9c9;
   margin: 50px 0 10px 0;
 }
 
 .titule-labels-2 {
   padding: 30px 450px 30px 400px;
-  background-color: rgb(3, 95, 95);
+  background-color: #035f5f;
   color: white;
   font-size: 50px;
-  border-bottom: 1px solid rgb(202, 201, 201);
+  border-bottom: 1px solid #cac9c9;
   margin: 50px 0 10px 0;
 }
 
 .titule-labels-3 {
   padding: 30px 470px 30px 470px;
-  background-color: rgb(3, 95, 95);
+  background-color: #035f5f;
   color: white;
   font-size: 50px;
-  border-bottom: 1px solid rgb(202, 201, 201);
+  border-bottom: 1px solid #cac9c9;
   margin: 50px 0 10px 0;
 }
 
@@ -424,36 +380,40 @@ footer {
   color: white;
   background-color: #3b5999;
 }
+
 .icon-twitter {
   color: white;
   background-color: #55acee;
 }
+
 .icon-youtube {
   color: white;
   background-color: #cd201f;
 }
+
 .icon-twitch {
   color: white;
   background-color: darkviolet;
 }
+
 .icon-instagram {
   color: white;
   background-color: #e4405f;
 }
 
 /* ------------------------ RANKINGS---------------------------------------- */
-
 .titule-ranking-counter {
   padding: 30px 10px 30px 30px;
   color: #b09310;
-  background-color: rgb(47, 47, 87);
+  background-color: #2f2f57;
   font-size: 30px;
   margin: 20px 0 20px 0;
 }
+
 .titule-ranking-valorant {
   padding: 30px 10px 30px 30px;
-  background-color: rgb(138, 6, 6);
-  color: rgb(255, 255, 255);
+  background-color: #8a0606;
+  color: white;
   font-size: 30px;
   margin: 20px 0 20px 0;
 }
@@ -471,13 +431,13 @@ footer {
   align-items: center;
   font-size: 20px;
 }
+
 ol li .main--body__ranking {
   margin: 30px 0 30px 0;
   padding: 10px 0 10px 0;
 }
 
 /* ------------------------ CONTACT---------------------------------------- */
-
 .contact-titule {
   padding: 30px 20px 30px 80px;
   background-color: white;
@@ -495,7 +455,7 @@ ol li .main--body__ranking {
 
 .titule-labels {
   padding: 30px 500px 30px 500px;
-  background-color: rgb(3, 95, 95);
+  background-color: #035f5f;
   color: white;
   font-size: 50px;
   margin: 50px 0 10px 0;
@@ -503,14 +463,13 @@ ol li .main--body__ranking {
 
 .titule-labels-2 {
   padding: 30px 450px 30px 400px;
-  background-color: rgb(3, 95, 95);
+  background-color: #035f5f;
   color: white;
   font-size: 50px;
   margin: 50px 0 10px 0;
 }
 
 /* ------------------------ LOGIN | CONTACT ---------------------------------------- */
-
 .body-form__login {
   display: flex;
   flex-direction: column;
@@ -539,7 +498,7 @@ ol li .main--body__ranking {
 
 .titule-labels {
   padding: 30px 300px 30px 300px;
-  background-color: rgb(3, 95, 95);
+  background-color: #035f5f;
   color: white;
   font-size: 50px;
   margin: 50px 0 10px 0;
@@ -547,27 +506,27 @@ ol li .main--body__ranking {
 
 .titule-labels-2 {
   padding: 30px 400px 30px 400px;
-  background-color: rgb(3, 95, 95);
+  background-color: #035f5f;
   color: white;
   font-size: 50px;
-
   margin: 50px 0 10px 0;
 }
 
 .titule-labels-3 {
   padding: 30px 450px 30px 450px;
-  background-color: rgb(3, 95, 95);
+  background-color: #035f5f;
   color: white;
   font-size: 50px;
-
   margin: 50px 0 10px 0;
 }
+
 /*------------------ Int. Equipos ------------------ */
 .titule-news__for-teams {
   padding: 50px;
   max-width: 50%;
   color: white;
 }
+
 .titules-int {
   max-width: 100%;
   height: auto;
@@ -576,6 +535,7 @@ ol li .main--body__ranking {
   padding: 30px;
   margin-bottom: 200px;
 }
+
 /* #grid-equipos {
   display: grid;
   grid-template-areas:
@@ -643,7 +603,6 @@ footer {
     grid-area: footer;
   }
 } */
-
 #grid {
   display: grid;
   grid-template-areas:
@@ -667,6 +626,7 @@ main {
 #news {
   grid-area: news;
 }
+
 #photos {
   grid-area: photos;
 }
@@ -692,14 +652,9 @@ aside {
     padding: 0;
     margin: 0;
   }
-
-  body {
-  }
-
   .logo {
     display: none;
   }
-
   #grid {
     display: grid;
     grid-template-areas:
@@ -711,27 +666,22 @@ aside {
       "footer footer footer";
     grid-template-rows: 180px 100px 850px 550px 1000px 150px;
   }
-
   header {
     grid-area: header;
   }
-
   main {
     grid-area: main;
     display: block;
   }
-
   section#news {
     grid-area: news;
   }
   section#photos {
     grid-area: photos;
   }
-
   section#matchs {
     grid-area: matchs;
   }
-
   footer {
     grid-area: footer;
   }
@@ -741,7 +691,6 @@ aside {
     align-items: center;
     flex-wrap: wrap;
   }
-
   [class^="fab fa"] {
     padding: 20px;
     font-size: 30px;
@@ -749,3 +698,4 @@ aside {
     margin: 30px;
   }
 }
+/*# sourceMappingURL=prueba.css.map */
